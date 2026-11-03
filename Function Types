@@ -1,0 +1,86 @@
+#Function
+
+#user define fuction
+
+#without argument
+
+# def hello():
+#     print("Hi i am leraning python")
+# hello()
+
+#with argument
+
+# def beach(name):
+#     print("name:",name)
+# beach("Varkala")
+
+#Positional
+
+# def Gowsik(name,course):
+#     print("name",name)
+#     print("course",course)
+# Gowsik(name="Gowsik",course="python")
+
+#Keyword Argument
+
+# def School(name,course):
+#     print("name",name)
+#     print("course",course)
+# School(course="Web Designing",name="Gowsik")
+
+#Default Argument
+
+# def chandru (name="Angelin"):
+#     print("Name:",name)
+# chandru("Gowsik")
+# chandru()
+
+#Variable Argument
+
+# def marks(*args):
+#     print(sum(args))
+# marks(1,2,3,4,5)
+# marks(6,3,2)
+
+#variable
+# def add_number(*numbers):
+#     total=0
+#     for n in numbers:
+#         total+=n
+#         print("total",total)
+# add_number(5,10)
+# add_number(3,4,7,2)
+
+#Recursion Function
+
+# def factorial(n):
+#     if n == 0:
+#         return 1
+#     else:
+#         return n * factorial(n-1)
+# print(factorial(5))
+
+
+#Lambda Function
+
+#Filter
+
+# num=[1,2,3,4,5,6,7]
+# even=list(filter(lambda x:x%2==0,num))
+# print(even)
+
+# name=["gowsik","Kannan","Yogesh","Selvaraj"]
+# a=list(filter(lambda x:x.startswith("g"),name))
+# print(a)
+
+#Mapping
+
+# a=[1,2,3,4,5,6]
+# b=list(map(lambda b:b*2,a))
+# print(b)
+
+#If Else Lambda
+
+# Y=lambda a:"Even" if a%2==0 else "Odd"
+# print(Y(5))
+
