@@ -1,0 +1,128 @@
+#Network
+#get hostname
+
+# import socket
+# name=socket.gethostname()
+# print(name)
+
+#Domain Ip address find
+
+# import socket
+# a="www.google.com"
+# name=socket.gethostbyname(a)
+# print(name)
+
+#Thread
+
+#Single Thread
+#Without thread
+
+# import time
+# print("Hello")
+# time.sleep(2)
+# print("Magic")
+
+#With thread
+
+import threading
+# import time
+# def task1():
+#     for i in range(7):
+#         print("Task 1:",i)
+#         time.sleep(2)
+# def task2():
+#     for i in range(3):
+#         print("Task2:",i)
+#         time.sleep(2)
+# task1()
+# task2()
+# t1=threading.Thread(target=task1())
+# t2=threading.Thread(target=task2())
+# t1.start()
+# t2.start()
+# t1.join()
+# t2.join()
+# print("Completed")
+
+#Deamon Thread
+
+# import threading
+# import time
+# def background_task():
+#     for i in range(10):
+#         print("Background task running")
+#         time.sleep(1)
+# t=threading.Thread(target=background_task)
+# t.start()
+# print("Main thread finished")
+
+#While Loop Deamon Thread
+#import threading
+# import time
+# def task():
+#     while True:
+#         print("Task completed")
+#         time.sleep(1)
+# t1=threading.Thread(target=task())
+# t1.daemon=True
+# t1.start()
+# print("Task Over")
+
+#Socket
+
+# import socket
+# s=socket.socket()
+# print("Socket successfully created")
+# port=9999
+# host=socket.gethostname()
+# s.bind((host,port))
+# print("socket binded to",port)
+# s.listen(3)
+# print("socket is listening")
+# while True:
+#     c,addr=s.accept()
+#     print("Got connection from",addr)
+#     c.send(b"Thankyou for connecting")
+#     c.close()
+
+#Thread Name
+
+# import threading
+# def task():
+#     print("Thread name:",threading.current_thread)
+# t1=threading.Thread(target=task)
+# t1.start()
+# t1.join()
+
+#Multiple Thread
+
+# import threading
+# def task():
+#     print("Magic")
+# for i in range(6):
+#     t=threading.Thread(target=task)
+#     t.start()
+#     t.join()
+
+#Thread Status
+
+#thread status
+# import threading
+# import time
+# def task():
+#      time.sleep(5)
+#      print("task completed")
+# t=threading.Thread(target=task)
+# t.start()
+# print(t.is_alive())
+# t.join()
+# print(t.is_alive())
+
+#Using Argument
+
+import threading
+def fun1(name):
+    print("student name:",name)
+t1=threading.Thread(target=fun1,args=("Angelin",))
+t1.start()
+t1.join()
