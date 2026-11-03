@@ -1,0 +1,122 @@
+#Single Inheritance
+
+# class trainer:
+#     def fun1(self):
+#         print("hii")
+# class Gowsik(trainer):
+#     def fun2(self):
+#         print("Gowsik inherit hii")
+# t=trainer()
+# g=Gowsik()
+# t.fun1()
+# g.fun1()
+# g.fun2()
+
+#Hiearichal Inheritance
+
+# class trainer:
+#     def fun1(self):
+#         print("shiny")
+# class joy(trainer):
+#     def fun2(self):
+#         print("joy")
+# class Gowsik(trainer):
+#     def fun3(self):
+#         print("gowsik")
+# t=trainer()
+# j=joy()
+# g=Gowsik()
+# t.fun1()
+# j.fun1()
+# j.fun2()
+# g.fun1()
+# g.fun3()
+
+#MultiLevel- Inheritance
+
+# class theatre:
+#     def fun1(self):
+#         print("Spider man")
+# class movie(theatre):
+#     def fun2(self):
+#         print("jailer2")
+# class person(movie):
+#     def fun3(self):
+#         print("Gowsik")
+#
+# t=theatre()
+# m=movie()
+# p=person()
+# t.fun1()
+# m.fun1()
+# m.fun2()
+# p.fun1()
+# p.fun2()
+# p.fun3()
+
+#Hybrid
+
+# class shiny:
+#     def fun1(self):
+#         print("helper")
+# class joy(shiny):
+#     def fun2(self):
+#         print("joy")
+# class Gowsik(shiny):
+#     def fun3(self):
+#      print("Gowsik")
+# class fees(joy,Gowsik):
+#     def fun4(self):
+#         print("fees")
+
+# s=shiny()
+# j=joy()
+# g=Gowsik()
+# f=fees()
+# s.fun1()
+# j.fun1()
+# j.fun2()
+# g.fun1()
+# g.fun3()
+# f.fun1()
+# f.fun2()
+# f.fun3()
+# f.fun4()
+
+#Multiple Inheritance
+
+# class python:
+#     def fun1(self):
+#         print("python")
+# class WD:
+#     def fun2(self):
+#         print("Web Design")
+# class Gowsik(python,WD):
+#     def fun3(self):
+#         print("both")
+#
+# p=python()
+# t=WD()
+# g=Gowsik()
+# p.fun1()
+# t.fun2()
+# g.fun1()
+# g.fun2()
+# g.fun3()
+
+
+#Tkinter
+
+
+import tkinter as tk
+def greet():
+    label.config(text="welcome to python!!")
+root=tk.Tk()
+root.title("python world!!")
+root.geometry("600x600")
+label=tk.Label(root,text="click the button")
+label.pack(pady=50)
+button=tk.Button(root,text="clik me",command=greet)
+button.pack()
+root.mainloop()
+
