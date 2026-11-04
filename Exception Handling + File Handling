@@ -1,0 +1,139 @@
+#Exception Handling
+
+# try:
+#     a = int(input("Enter first number: "))
+#     b = int(input("Enter second number: "))
+#
+#     result = a + b
+#     print("Result:", result)
+#
+# except ValueError:
+#     print("Please enter numbers only")
+#
+# except ZeroDivisionError:
+#     print("Cannot divide by zero")
+#
+# else:
+#     print("Calculation completed successfully")
+
+# ZeroDivisionError
+
+# try:
+#     a = int(input("Enter a number: "))
+#     b = int(input("Enter another number: "))
+#
+#     result = a / b
+#     print("Result:", result)
+#
+# except ZeroDivisionError:
+#     print("Error: Cannot divide by zero")
+
+# def add_numbers(num1, num2):
+#     try:
+#         num1 = int(num1)
+#         num2 = float(num2)
+#         return num1*num2
+#     except:
+#         print ("Error")
+# print (add_numbers(3,"kl"))
+
+# def divide(a, b):
+#     try:
+#         print("Result:", a / b)
+#     except ZeroDivisionError:
+#         print("Cannot divide by zero!")
+#     finally:
+#         print("Division completed.")
+# divide(10, 0)
+
+
+# def access_list():
+#     items = [10, 20, 30]
+#     try:
+#         print(items[5])
+#     except IndexError:
+#         print("Index is out of range!")
+#     finally:
+#         print("Program ended.")
+# access_list()
+
+
+
+# def check_age(age):
+#     try:
+#         age = int(age)
+#         if age < 0:
+#             raise ValueError("Age cannot be negative")
+#         print("Age:", age)
+#     except ValueError as e:
+#         print("Error:", e)
+# check_age(-5)
+
+
+# def get_number():
+#     try:
+#         num = int(input("Enter a number: "))
+#         print("Number:", num)
+#     except ValueError:
+#         print("Error: Enter a valid integer!")
+# get_number()
+
+
+# def divide_numbers(a, b):
+#     try:
+#         result = a / b
+#         print("Result:", result)
+#     except ZeroDivisionError:
+#         print("Error: Cannot divide by zero!")
+#     except TypeError:
+#         print("Error: Invalid input type!")
+# divide_numbers(10, 0)
+
+#File Handling
+
+# def file_handling():
+#     with open("sample.txt", "w") as file:
+#         file.write("Hello Python!")
+#     with open("sample.txt", "r") as file:
+#         data = file.read()
+#     print("File Content:", data)
+#
+# file_handling()
+
+
+# def read_file():
+#     with open("sample.txt", "r") as f:
+#         data = f.read()
+#         print(data)
+# try:
+#     read_file()
+# except FileNotFoundError:
+#     print("File not found")
+
+
+# def write_lines():
+#     with open("notes.txt", "w") as f:
+#         f.writelines(["Python\n", "Java\n", "HTML\n"])
+#     print("Lines written successfully")
+# write_lines()
+
+
+# def read_lines():
+#     with open("notes.txt", "r") as f:
+#         for line in f:
+#             print(line.strip())
+# try:
+#     read_lines()
+# except FileNotFoundError:
+#     print("File not found")
+
+
+# def create_file():
+#     try:
+#         with open("newfile.txt", "x") as f:
+#             f.write("My first file")
+#         print("File created")
+#     except FileExistsError:
+#         print("File already exists")
+# create_file()
+
