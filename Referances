@@ -1,0 +1,131 @@
+# Referance
+# Iterators
+# 1. Create an iterator for a list of 5 student names and display each name using next().
+
+# students = []
+# for i in range(2):
+#     name = input("Enter your name: ")
+#     students.append(name)
+# it = iter(students)
+# print("\nStudents name : ")
+# for i in range(2):
+#     print(next(it))
+
+
+# Generators
+
+# 1.Create a generator function to generate numbers from 1 to 10 using yield.
+
+# def numbers():
+#     for i in range(1, 11):
+#         yield i
+# result = numbers()
+# print("Numbers from 1 to 10:")
+# for value in result:
+#     print(value)
+
+# 2Create a generator to generate numbers divisible by 5 between 1 and 100.
+
+# def divisible():
+#     for i in range(1, 101):
+#         if i % 5 == 0:
+#             yield i
+# result = divisible()
+# print("Numbers divisible by 5 between 1 and 100:")
+# for num in result:
+#     print(num)
+
+# Closure
+
+# 1.Create an outer function that accepts a number and an inner function that adds another number to it.
+
+# def outer(x):
+#     def inner(y):
+#         return x + y
+#     return inner
+# a = int(input("Enter first number: "))
+# b = int(input("Enter second number: "))
+# result = outer(a)
+# print("Addition:", result(b))
+
+
+# 2.Create a closure to perform addition, subtraction, multiplication, and division based on the selected operation.
+
+
+# def calculator(lap):
+#     def calculate(a, b):
+#         if lap == "Addition":
+#             return a + b
+#         elif lap == "Subtraction":
+#             return a - b
+#         elif lap == "Multiplication":
+#             return a * b
+#         elif lap == "Division":
+#             if b != 0:
+#                 return a / b
+#             else:
+#                 return "Cannot divide by zero"
+#         else:
+#             return "Invalid operation"
+#
+#     return calculate
+#
+#
+# a = int(input("Enter first number: "))
+# b = int(input("Enter second number: "))
+#
+# print("\n1. Addition")
+# print("2. Subtraction")
+# print("3. Multiplication")
+# print("4. Division")
+#
+# choice = input("Enter your choice: ")
+#
+# if choice == "1":
+#     result = calculator("Addition")
+# elif choice == "2":
+#     result = calculator("Subtraction")
+# elif choice == "3":
+#     result = calculator("Multiplication")
+# elif choice == "4":
+#     result = calculator("Division")
+# else:
+#     result = None
+#
+# if result:
+#     print("Result:", result(a, b))
+# else:
+#     print("Invalid choice")
+
+# Decorator
+
+# 1,Create a decorator that displays "Welcome to Python" before executing a function.
+
+# def welcome(func):
+#     def inner():
+#         print("Welcome to Python")
+#         func()
+#     return inner
+# @welcome
+# def display():
+#     print("This is my Python coding")
+# display()
+
+# 2.Create a decorator that checks username and password before allowing login.
+
+# def login_required(func):
+#     def inner(username, password):
+#         if username == "zara" and password == "1234":
+#             print("Login Successful!")
+#             func()
+#         else:
+#             print("Invalid Username or Password!")
+#             print("Login Failed!")
+#     return inner
+# @login_required
+# def dashboard():
+#     print("Welcome to Admin Dashboard")
+# username = input("Enter Username: ")
+# password = input("Enter Password: ")
+# dashboard(username, password)
+
