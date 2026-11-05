@@ -1,0 +1,195 @@
+#Math - Mathematical Calculations
+
+# import math as m
+# print(m.pi)
+# print(m.factorial(5))
+# print(m.tan(1))
+# print(m.sqrt(1))
+# print(m.ceil(4.5))
+# print(m.floor(4.6))
+# print(m.degrees(5))
+
+#Scipy- Scientific Calculation
+
+#Time
+
+# import time as t
+# print("Zara")
+# t.sleep(5)
+# print("web")
+# print(t.time())
+# print(t.strftime("%H:%M:%S"))
+# print(t.strftime("%H:%M:%S"))
+# print(t.localtime())
+
+#Calender
+#
+# import calendar as c
+# print(c.calendar(2026))
+# print(c.month(theyear=2026, themonth=9))
+# print(c.monthrange(year=2026, month=9))
+# print(c.leapdays(y1=2020,y2=2026))
+# print(c.leapdays(y1=2020,y2=2026))
+# print(c.isleap(2019))
+# print(c.month_name[7])
+# print(c.monthcalendar(year=2026, month=9))
+# print(c.weekday(2026,11,27))
+
+#Date Time
+
+# import datetime as dt
+# print(dt.datetime.now())
+# print(dt.date.today())
+# print(dt.date(2026, 7, 10).strftime("%d-%m-%Y"))
+# print(dt.datetime.now().year)
+# print(dt.datetime.now().month)
+# print(dt.datetime.now().day)
+# print(dt.datetime.now().hour)
+# print(dt.datetime.now().minute)
+# print(dt.datetime.now().strftime("%d-%m-%Y"))
+# print(dt.datetime.now().strftime("%d-%m-%Y%H%M%S"))
+
+#Random
+
+# import random as r
+# print(r.random())
+# print(r.randint(a=1,b=20))
+# print(r.randrange(50,100,5))
+
+#List of values
+
+# import random as r
+# a=["Angel","Magic","Something","Doing"]
+# print(r.choice(a))
+# r.shuffle(a)
+# print(a)
+
+
+#Pywhatkit
+
+import pywhatkit as pk
+# print(pk.playonyt("Today news"))
+# print(pk.take_screenshot())
+# print(pk.search("Badminton"))
+
+#Web Browser
+
+# import webbrowser as wb
+# print(wb.open('https://www.google.com'))
+# print(wb.open('youtube.com'))
+
+
+#ARRAYS IN PYTHON
+
+#List
+
+# import numpy as np
+# a=np.array([1,2,3,4,])
+# b=np.array([2,3,4,5])
+# print(a)
+# print(b)
+# print(a+b)
+# print(a-b)
+# print(a*b)
+
+
+#Numpy
+
+# import numpy as np
+# a=np.array([10,20,30,40])
+# print("Array:",a)
+# print("Sum:",np.sum(a))
+# print("Product:",np.mean(a))
+# print("Maximim:",np.max(a))
+# print("Minimum:",np.min(a))
+# print("Muliply by 2",a*2)
+# print("Square:",a**2)
+
+
+#Winsound
+
+# import winsound as w
+# print(w.Beep(1000,500))
+
+
+#Pyttsx3
+#
+# import pyttsx3
+# engine=pyttsx3.init()
+# engine.say("Hello Welcome to the AI world!")
+# engine.runAndWait()
+
+#USER INPUT PYTTSX3
+
+# import pyttsx3
+# engine = pyttsx3.init()
+# text=input=input("Enter your text: ")
+# engine.say(text)
+# engine.runAndWait()
+
+
+#Speed
+
+# import pyttsx3
+# engine = pyttsx3.init()
+# engine.setProperty("rate", 1000)
+# engine.say("Hello World nowadays future is ai")
+# engine.runAndWait()
+
+#Volume
+#
+# import pyttsx3
+# engine = pyttsx3.init()
+# engine.setProperty("volume", 1.0)
+# engine.setProperty("rate", 150)
+# engine.say("This is a python text to speech")
+# engine.runAndWait()
+
+
+#Plyer
+
+# from plyer import notification
+#
+# notification.notify(
+#     title="python",
+#     message="Hello World",
+#     timeout=5
+# )
+
+
+#Pandas
+
+# import pandas as pd
+#
+# data = {
+#     "Name": ["Arun", "Divya", "Karthik"],
+#     "Age": [21, 22, 20],
+#     "City": ["Chennai", "Madurai", "Coimbatore"]
+# }
+#
+# df = pd.DataFrame(data)
+# print(df)
+
+
+#Matplotlib
+
+# import matplotlib.pyplot as plt
+# x = [1, 2, 3, 4, 5]
+# y = [10, 20, 15, 30, 25]
+# plt.plot(x, y)
+# plt.title("Sales")
+# plt.xlabel("Day")
+# plt.ylabel("Amount")
+# plt.show()
+
+#Bar Graph
+
+# import matplotlib.pyplot as plt
+# names = ["Arun", "Divya", "Karthik", "Meena"]
+# marks = [80, 90, 75, 85]
+# plt.bar(names, marks)
+# plt.title("Student Marks")
+# plt.xlabel("Students")
+# plt.ylabel("Marks")
+# plt.show()
+
