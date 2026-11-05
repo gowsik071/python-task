@@ -1,0 +1,30 @@
+create database gowsik;
+use gowsik;
+create table python(
+id int primary key,
+student varchar (20),
+course varchar (20),
+area varchar (20)
+);
+insert into python values
+(1, "Gowsik", "python", "Chennai"),
+(2, "Kannan", "AI", "Nvs"),
+(3, "Kathir", "Nurse", "Us"),
+(4, "Yogesh", "T-Master", "Clg-opposite");
+select * from python;
+select course, area from python;
+select * from python
+where course="Python";
+select * from python
+where course="Python" or course="Dijango";
+update python
+set student="Venk"
+where id=4;
+select * from python;
+update python
+set area="5 Roads"
+where id=1;
+select * from python;
+delete from python
+where id=2;
+select * from python;
